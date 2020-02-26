@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding_3</title>
+    <script type='text/javascript' src="coding_3.js"></script>
+    <style>
+        body{
+            padding:  0 200px;
+            margin: 100px;
+            background-color: #BBDEFB;
+        }
+        p{
+            color: red;
+        }
+        
+        table{
+            border: 2px solid red;
+        }
+        thead{
+            
+        }
+        table td{
+           
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="empData">
+        <form action="#" id='form'>
+            <label for=""> FIRST NAME</label><br>
+            <input type="text" id='fname'>
+            <p class="errorDisplay"></p>
+
+            <label for="">LAST NAME</label> <br>
+            <input type="text" id='lname'>
+            <p class="errorDisplay1"></p>
+
+            <label for="">SALARY</label><br>
+            <input type="text" id='sal'>
+            <p class="errorDisplay2"></p>
+
+            <button onclick=submitBtn()>Submit </button>
+        </form>
+<hr>
+    </div>
+    <div class="resultData">
+        <table class="table">
+            <thead>
+                <tr>
+                <th> FirstName</th>
+                <th> LastName</th>
+                <th> Salary</th>
+                <th>deleteBtn</th>
+                </tr>
+            </thead>
+            <tbody id="empData">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
